@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Allen Control</title>
+
+  <link charset="utf-8" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen" rel="stylesheet" title="no title">
+</head>
+
+<body ng-app="allenControl">
+
+  <header ng-include="'includes/header.html'"></header>
+
+  <div class="container">
+    <div ng-view></div>
+  </div>
+
+
+  <!-- Início dos scripts -->
+
+  <script charset="utf-8" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script charset="utf-8" src="node_modules/angular/angular.min.js"></script>
+  <script charset="utf-8" src="node_modules/angular-route/angular-route.min.js"></script>
+  <script charset="utf-8" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+  <script src="js/app.js" charset="utf-8"></script>
+
+  <!-- Others -->
+  <script src="js/constants/constants.js" charset="utf-8"></script>
+
+  <script src="js/config/route-config.js" charset="utf-8"></script>
+
+  <!-- Controllers -->
+  <script src="js/controllers/category-controller.js" charset="utf-8"></script>
+  <script src="js/controllers/product-controller.js" charset="utf-8"></script>
+  <script src="js/controllers/new-product-controller.js" charset="utf-8"></script>
+
+  <!-- Services -->
+  <script src="js/services/category-api.js" charset="utf-8"></script>
+  <script src="js/services/product-api.js" charset="utf-8"></script>
+  <!-- Filters -->
+
+
+
+</body>
+
+</html>

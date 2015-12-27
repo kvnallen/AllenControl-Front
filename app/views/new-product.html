@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="form-group col-md-4">
+    <label for="">Descrição</label>
+    <input class="form-control" id="description" ng-model="product.description" placeholder="Descrição do produto" type="text">
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-2">
+    <label for="">Preço</label>
+    <input class="form-control" id="price" ng-model="product.price" placeholder="Preço" type="text">
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="form-group col-md-2">
+    <label for="">Quantidade em mãos</label>
+    <input class="form-control" id="description" ng-model="product.quantityOnHand" placeholder="Quantidade Atual" type="text">
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group  col-md-4">
+    <label for="">Unidade de Medida</label>
+    <select class="form-control"
+            ng-model="product.unitOfMeaseurementId"
+            ng-options="category as category.title for category in categories track by category.id">
+      <option value="">Selecione uma categoria</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group  col-md-4">
+    <label for="">Categoria</label>
+    <select class="form-control"
+            ng-model="product.categoryId"
+            ng-options="category as category.title for category in categories track by category.id">
+      <option value="">Selecione uma categoria</option>
+    </select>
+  </div>
+</div>
+
+<button class="btn btn-success" name="button" type="button">Cadastrar produto</button>

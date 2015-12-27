@@ -1,0 +1,39 @@
+
+
+<div class="col-md-9">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Título</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="category in categories">
+        <td>{{category.title}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cadastro de Categoria</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label for="">Título</label>
+      <input type="text" class="form-control" id="" placeholder="Título da categoria" ng-model="title">
+
+    </div>
+
+
+  </div>
+  <div class="panel-footer">
+    <button type="button" name="button" class="btn btn-success" ng-click="register(title)">Cadastrar</button>
+  </div>
+</div>
+
+
+</div>

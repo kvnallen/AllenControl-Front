@@ -1,0 +1,21 @@
+{
+  "name": "allencontrol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.5.0-rc.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "stock"
+  ],
+  "author": "Kevin Allen",
+  "license": "ISC"
+}
