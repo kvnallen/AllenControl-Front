@@ -24,8 +24,8 @@
     <label for="">Unidade de Medida</label>
     <select class="form-control"
             ng-model="product.unitOfMeaseurementId"
-            ng-options="category as category.title for category in categories track by category.id">
-      <option value="">Selecione uma categoria</option>
+            ng-options="unitOfMeasurement as unitOfMeasurement.name for unitOfMeasurement in unitsOfMeasurement track by unitOfMeasurement.id">
+      <option value="">Selecione uma unidade de medida</option>
     </select>
   </div>
 </div>

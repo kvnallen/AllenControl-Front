@@ -24,6 +24,9 @@
       resolve : {
         categories : function (categoryAPI) {
           return categoryAPI.get();
+        },
+        unitsOfMeasurement : function (unitOfMeasurementAPI) {
+          return unitOfMeasurementAPI.get();
         }
       }
     });

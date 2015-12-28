@@ -5,12 +5,13 @@
     .module('allenControl')
     .controller('newProductController', newProductController);
 
-  function newProductController($scope, productAPI, categories) {
+  function newProductController($scope, productAPI, categories, unitsOfMeasurement) {
 
     /*jshint validthis: true */
     $scope.register = register;
     $scope.categories = categories.data;
-    
+    $scope.unitsOfMeasurement = unitsOfMeasurement.data;
+
     loadProducts();
 
     ////////////////////////////
